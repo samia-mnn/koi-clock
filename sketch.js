@@ -15,8 +15,6 @@ function setup(){
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
 	textAlign(CENTER, CENTER);
-  img = loadImage('man.png');
-  img.resize(50, 100);
   frameRate(20);
   mainpos = windowWidth - minute()*windowWidth/60;
   startingTime = hour()%12;
@@ -79,7 +77,6 @@ for (var g = 0; g < myFishes.length; g++)
   myFishes[g].move();
 }
 
-img.resize(700, 700);
 scale(3);
 if(hour()<=5 || hour()>17)
 {
